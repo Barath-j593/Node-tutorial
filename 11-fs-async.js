@@ -25,4 +25,12 @@ readFile('./content/sample.txt','utf-8',(err,result)=>{
 });
 
 console.log('starting the next one');
+//output:
+// start
+// starting the next one
+// Here is the result: This is sample text, This is text file
+// done with this task
+
+
+// In the above code, we are reading two files asynchronously and then writing the result to a new file. The callbacks are nested inside each other, which can make it difficult to read and understand the flow of the code. This is known as callback hell.
 // The above code is an example of callback hell, where we have nested callbacks to handle asynchronous operations. This can lead to code that is difficult to read and maintain. To avoid this, we can use Promises or async/await to handle asynchronous operations in a more readable way.
